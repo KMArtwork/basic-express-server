@@ -32,4 +32,9 @@ app.get('/person', (request, response, next) => {
 app.use(error404)
 app.use(error500)
 
-module.exports = app;
+module.exports = {
+  app,
+  start: (port) => app.listen(port, () => {
+    console.log(`Sever is listening on port ${port}`)
+  }),
+};
