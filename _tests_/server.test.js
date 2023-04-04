@@ -4,9 +4,6 @@ const server = require('../src/server')
 const supertest = require('supertest')
 const request = supertest(server.app)
 
-const error404 = require('../src/error-handlers/404')
-const error500 = require('../src/error-handlers/500')
-
 describe('Testing if server sends back proper responses & status codes', () => {
 
   test('Should send a 404 on a bad route', async () => {

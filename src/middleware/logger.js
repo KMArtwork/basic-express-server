@@ -1,7 +1,10 @@
 'use strict'
 
 const logger = (request, response, next) => {
-  console.log(`Request: ${request.method} | URL: ${request.url}`)
+  // was not sure how to properly test this without attaching the logger message on to the response object
+  // previously was only using `console.log(`Request: ${request.method} | URL: ${request.url}`)`
+  response.message = `Request: ${request.method} | URL: ${request.url}`;
+  console.log(response.message)
   next();
 }
 
