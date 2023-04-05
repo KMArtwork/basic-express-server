@@ -5,6 +5,8 @@ require('dotenv').config();
 
 const serverUrl = process.env.PORT
 
-app.listen(serverUrl, () => {
-  console.log(`Server is running, listening on ${serverUrl}`)
-})
+app.start(serverUrl);
+
+// app.listen(serverUrl, () => {
+//   console.log(`Server is running, listening on ${serverUrl}`)
+// })
