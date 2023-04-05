@@ -8,6 +8,10 @@ Endpoint: /person
 
 Example: https://basic-express-server-y020.onrender.com/person?name=El+Duderino
 
+## UML Architecture
+
+![UML Architecture](./UML-diagram.JPG)
+
 ## GitHub Actions
 
 - [Actions](https://github.com/KMArtwork/basic-express-server/actions)
